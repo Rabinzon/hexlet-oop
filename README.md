@@ -1,8 +1,7 @@
 ## get-geo
 Library that returns geo information about ip address from the service http://ip-api.com
 
-
-[![Build Status](https://travis-ci.org/rabinzon/hexlet-oop.svg?branch=master)](https://travis-ci.org/rabinzon/hexlet-oop)
+[![Build Status](https://travis-ci.org/Rabinzon/hexlet-oop.svg?branch=master)](https://travis-ci.org/Rabinzon/hexlet-oop)
 
 ## CL usage
 ```sh
@@ -39,6 +38,8 @@ await getGeo(ip);
 
 ```sh
 $ make install
+$ make build
+$ npm ln
 ```
 
 ## Run tests
