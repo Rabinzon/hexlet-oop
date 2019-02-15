@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "index": "dist/bin/index.js"
+    "get-geo": "dist/bin/index.js"
   },
   "engines": {
     "node": ">=8"
@@ -32,6 +32,8 @@
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
     "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "axios": "^0.18.0",
+    "commander": "^2.19.0",
     "gulp": "^4.0.0",
     "source-map-support": "^0.5.10"
   },

@@ -1,14 +1,39 @@
-##
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/hexletguides.github.io/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=nodejs-package)
+## get-geo
+Library that returns geo information about ip address from the service http://ip-api.com
 
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=nodejs-package).
-##
 
-# nodejs-package
+[![Build Status](https://travis-ci.org/rabinzon/hexlet-oop.svg?branch=master)](https://travis-ci.org/rabinzon/hexlet-oop)
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/javascript-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/javascript-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/javascript-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/javascript-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+## CL usage
+```sh
+$ get-geo [ip address]
+
+{
+  "as": "AS1586 DoD Network Information Center",
+  "city": "Sierra Vista",
+  "country": "United States",
+  "countryCode": "US",
+  "isp": "DoD Network Information Center",
+  "lat": 31.5552,
+  "lon": -110.35,
+  "org": "USAISC",
+  "query": "134.234.3.2",
+  "region": "AZ",
+  "regionName": "Arizona",
+  "status": "success",
+  "timezone": "America/Phoenix",
+  "zip": "85613"
+}
+
+```
+
+## Library usage
+
+```js
+import getGeo from 'getGeo';
+
+await getGeo(ip);
+```
 
 ## Setup
 
@@ -21,3 +46,4 @@ $ make install
 ```sh
 $ make test
 ```
+

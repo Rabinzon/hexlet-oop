@@ -1,4 +1,5 @@
 import 'source-map-support/register';
-import half from './half';
+import axios from 'axios';
+import getGeo from './getGeo';
 
-export default half;
+export default async (ip = '', fetch = axios) => getGeo(ip, fetch);
