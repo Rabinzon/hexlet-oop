@@ -1,5 +1,13 @@
 import 'source-map-support/register';
 import axios from 'axios';
-import getGeo from './getGeo';
+import GeoData from './GeoData';
 
-export default async (ip = '', fetch = axios) => getGeo(ip, fetch);
+export default class {
+  constructor(fetch = axios, parse = t => t) {
+    this.geoData = new GeoData(fetch, parse);
+  }
+
+  async get(ip = '') {
+    return this.geoData.get(ip);
+  }
+}

@@ -29,9 +29,9 @@ $ get-geo [ip address]
 ## Library usage
 
 ```js
-import getGeo from 'getGeo';
-
-await getGeo(ip);
+import GeoData from 'GeoData';
+const geoData = new GeoData();
+await geoData.get(ip);
 ```
 
 ## Setup
